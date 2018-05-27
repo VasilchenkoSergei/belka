@@ -95,7 +95,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -150px;
-  background-position-y: 50px;
+
 }
 
 .title {
@@ -142,6 +142,55 @@ body {
   border: 1px solid #000;
   font-family: "Proxima Nova", sans-serif;
   line-height: 32px;
+}
+
+.routes {
+  height: 405px;
+  background-image: url(../img/routes-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.routes-item {
+  width: 215px;
+  height: 320px;
+  margin-top: 50px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.routes-item__title {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 30px;
+  color: #c7c7d3;
+  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-shadow: 0 2px 2px #000;
+}
+
+.routes-item__height {
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 13px;
+  text-shadow: 0 1px 2px #000;
+}
+
+.routes-item__age {
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 2px #000;
+}
+
+.routes-item__text {
+  text-align: center;
+  margin: 0;
+  padding-top: 72px;
+  color: #fff;
+  text-shadow: 0 1px 2px #000;
 }
 
 
