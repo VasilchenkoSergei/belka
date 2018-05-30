@@ -95,7 +95,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -150px;
-
 }
 
 .title {
@@ -286,6 +285,11 @@ body {
   margin-bottom: 53px;
 }
 
+.actions-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .actions-item {
   width: 100%;
   height: 255px;
@@ -320,19 +324,264 @@ body {
   padding-top: 180px;
 }
 
+.about__container {
+  height: 450px;
+  background-image: url(../img/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 600px 460px;
+  background-position: -150px 0;
+  margin-top: 30px;
+}
+
+.about__title  {
+  color: #fff;
+  padding-top: 48px;
+}
+
+.about__underline {
+  background: #fff;
+}
+
+.about__list {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 265px;
+}
+
+.about-item__icon {
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.about-item__icon--second {
+  background-position: -85px 0;
+}
+
+.about-item__icon--third {
+  background-position: -170px 0;
+}
+
+.about-item__text {
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 0 2px 2px #000;
+  width: 195px;
+}
+
+.pictures {
+  height: 455px;
+}
+
+.pictures__img-wrap {
+  width: 220px;
+  height: 400px;
+  display: none;
+  
+}
 
 
+.pictures__img {
+  width: 100%;
+  height: auto;
+}
 
+.prices__table {
+  display: none;
+}
 
+.prices__form {
+  margin-top: 55px;
+  text-align: center;
+  
+}
 
+.form__select {
+  border: none;
+  height: 57px;
+  width: 320px;
+  border-top: 1px solid #000;
+  margin-left: -13px;
+}
 
+.form__select:last-child {
+  border-bottom: 1px solid #000;
+}
 
+.form__option {
+  text-align: center;
+  border: 1px solid #000;
+}
 
+.prices__counter {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  height: 53px;
+  line-height: 53px;
+  margin-left: -13px;
+  margin-right: -15px;
+  padding-left: 13px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.prices__extra {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.prices__extra td {
+  height: 13px;
+  font-size: 10px;
+  text-align: left;
+}
+
+.prices__btn {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #932626;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  margin: 0 auto;
+  display: block;
+}
+
+.prices__link {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 13px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reviews {
+  background-image: url(../img/prices-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.reviews__container {
+  height: 560px;
+  background-color: #ebebeb;
+  opacity: 0.7;
+  
+}
+
+.reviews__title {
+  padding-top: 42px;
+  position: relative;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  z-index: 5;
+}
+
+.reviews__item-wrap {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.reviews__item-img {
+  width: 100%;
+  height: auto;
+}
+
+.reviews__item-name {
+  font-weight: bold;
+}
+
+.reviews__item-skills {
+}
+
+.reviews__item-socials {
+  width: 65px;
+  height: 30px;
+}
+
+.reviews-socials__link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 26px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.reviews-socials__insta {
+  background-position: -205px -178px;
+}
+
+.reviews-socials__vk {
+  background-position: -125px -177px;
+}
+
+.reviews__item-text {
+  margin: 0;
+  height: 30%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.page-footer {
+  height: 490px;
+  position: relative;
+}
+
+iframe {
+  width: 320px;
+  height: 230px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 
 
 
 @media (min-width: 740px) {
+
+
+.prices__table {
+  border: 1px solid #000;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+
 
 }
 
