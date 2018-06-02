@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Belka -Скалодром</title>
+	<!-- <link rel="stylesheet" href="css/slick.css"> -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,46 +12,54 @@
 	
 <div class="headline">
 	<div class="headline__container  container">
-		<span class="headline__time">24 часа</span>
-		<a href="tel:+7812999788" class="headline__phone">8(812)999-77-88</a>
-		<a href="#" class="headline__address">Выборгское ш., 220</a>
+		<div class="headline-contacts">
+			<span class="headline-contacts__time">24 часа</span>
+			<a href="tel:+7812999788" class="headline-contacts__phone">8(812)999-77-88</a>
+			<a href="#" class="headline-contacts__address">Выборгское ш., 220</a>
+		</div>
+	</div>
+	<div class="headline__burger  burger">
+		<div class="burger__dot"></div>
+		<div class="burger__dot"></div>
+		<div class="burger__dot"></div>
 	</div>
 </div>
 
-<header class="page-header" id="page-header">
-	<div class="page-header__container  container">
-		<div class="page-header__logo"></div>
-		<a href="#" class="page-header__btn">Купить билет</a>
-		<nav class="page-header__main-nav  main-nav">
-			<ul class="main-nav__list">
-				<li class="main-nav__item">
-					<a href="#" class="main-nav__link">Трассы</a>
-				</li>
-				<li class="main-nav__item">
-					<a href="#" class="main-nav__link">Акции</a>
-				</li>
-				<li class="main-nav__item">
-					<a href="#" class="main-nav__link">Цены</a>
-				</li>
-				<li class="main-nav__item">
-					<a href="#" class="main-nav__link">Отзывы<</a>
-				</li>
-				<li class="main-nav__item">
-					<a href="#" class="main-nav__link">Контакты</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-</header>
-
 <div class="promo">
 	<div class="promo__container  container">
+		<header class="page-header" id="page-header">
+			<div class="page-header__container  container">
+				<div class="page-header__logo-wrap">
+					<img src="img/logo.png" alt="логотип" class="page-header__logo">
+				</div>
+				<a href="#" class="page-header__btn">Купить билет</a>
+				<nav class="page-header__main-nav  main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<a href="#" class="main-nav__link">Трассы</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="#" class="main-nav__link">Акции</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="#" class="main-nav__link">Цены</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="#" class="main-nav__link">Отзывы</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="#" class="main-nav__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 		<h1 class="promo__title  title">Скалодром</h1>
 		<div class="promo__underline  underline"></div>
 		<p class="promo__text--mobile"> Заберись на вершину, не уезжая в горы!</p>
 		<p class="promo__text">
 			Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а также для спортсменов разного уровня.<br>Включает в себя 2 детские трассы и 3 взрослые.<br>Скалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
-		<a href="#" class="page-header__btn">Купить билет</a>
+		<a href="#" class="promo__btn">Купить билет</a>
 	</div>
 </div>
 
@@ -58,52 +67,52 @@
 	<div class="routes__container  container">
 		<h2 class="routes__title  title">Трассы</h2>
 		<div class="routes__underline  underline"></div>
-		<div class="routes-list">
-			<article class="routes-item">
+		<div class="routes__list">
+			<article class="routes-item  routes-item--first">
 				<h3 class="routes-item__title">Трасса #1</h3>
 				<span class="routes-item__height">Высота 15 м</span>
 				<span class="routes-item__age">Возраст 13+</span>
 				<div class="routes-item__img-wrap">
-					<img src="" alt="фото маршрута" class="routes-item__img">
+					<img src="img/route-photo1.jpg" alt="фото маршрута" class="routes-item__img">
 				</div>
 				<p class="routes-item__text">Трасса для опытных скалолазов. Требуется наличие хорошей физподготовки.</p>
 			</article>
-			<article class="routes-item">
+<!-- 			<article class="routes-item  routes-item--second">
 				<h3 class="routes-item__title">Трасса #2</h3>
 				<span class="routes-item__height">Высота 4 м</span>
 				<span class="routes-item__age">Возраст 4+</span>
 				<div class="routes-item__img-wrap">
-					<img src="" alt="фото маршрута" class="routes-item__img">
+					<img src="img/route-photo2.jpg" alt="фото маршрута" class="routes-item__img">
 				</div>
 				<p class="routes-item__text">Для людей с разной физподготовкой. Различные зацепы и рельефы стены.</p>
 			</article>
-			<article class="routes-item">
+			<article class="routes-item  routes-item--third">
 				<h3 class="routes-item__title">Трасса #3</h3>
 				<span class="routes-item__height">Высота 10 м</span>
 				<span class="routes-item__age">Возраст 13+</span>
 				<div class="routes-item__img-wrap">
-					<img src="" alt="фото маршрута" class="routes-item__img">
+					<img src="img/route-photo3.jpg" alt="фото маршрута" class="routes-item__img">
 				</div>
 				<p class="routes-item__text">Трасса подойдет как для профессионалов, так и для любителей. Необходима хорошая физподготовка.</p>
 			</article>
-			<article class="routes-item">
+			<article class="routes-item  routes-item--fourth">
 				<h3 class="routes-item__title">Трасса #4</h3>
 				<span class="routes-item__height">Высота 3 м</span>
 				<span class="routes-item__age">Возраст 4+</span>
 				<div class="routes-item__img-wrap">
-					<img src="" alt="фото маршрута" class="routes-item__img">
+					<img src="img/route-photo4.jpg" alt="фото маршрута" class="routes-item__img">
 				</div>
 				<p class="routes-item__text">Самая невысокая трасса. Специальные зацепы для детей.</p>
 			</article>
-			<article class="routes-item">
+			<article class="routes-item  routes-item--fifth">
 				<h3 class="routes-item__title">Трасса #5</h3>
 				<span class="routes-item__height">Высота 8 м</span>
 				<span class="routes-item__age">Возраст 13+</span>
 				<div class="routes-item__img-wrap">
-					<img src="" alt="фото маршрута" class="routes-item__img">
+					<img src="img/route-photo5.jpg" alt="фото маршрута" class="routes-item__img">
 				</div>
 				<p class="routes-item__text">Средняя высота и сложность. Физподготовка не обязательна.</p>
-			</article>
+			</article> -->
 		</div>
 	</div>
 </section>
@@ -112,7 +121,7 @@
 	<div class="actions__container  container">
 		<h2 class="actions__title  title">Акции</h2>
 		<div class="actions__underline  underline"></div>
-		<div class="actions-list">
+		<div class="actions__list">
 			<div class="actions-item">
 				<p class="actions-item__text">Компаниям от 5 чел. скидка 10%</p>
 			</div>
@@ -167,20 +176,20 @@
 		<div class="prices__underline  underline"></div>
 		<form action="" class="prices__form  form">
 			<select name="" id="" class="form__select">
-				<option value="" class="form__option">Выберите возраст</option>
-				<option value="">От 4 лет</option>
-				<option value="">От 7 лет</option>
+				<option value="">Выберите возраст</option>
+				<option value="" class="form__option">От 4 лет</option>
+				<option value="" class="form__option">От 7 лет</option>
 			</select>
 			<select name="" id="" class="form__select">
-				<option value="" class="form__option">Выберите место</option>
-				<option value="">Все трассы</option>
-				<option value="">Скалодром</option>
-				<option value="">Веревочный парк</option>
+				<option value="">Выберите место</option>
+				<option value="" class="form__option">Все трассы</option>
+				<option value="" class="form__option">Скалодром</option>
+				<option value="" class="form__option">Веревочный парк</option>
 			</select>
 			<select name="" id="" class="form__select">
-				<option value="" class="form__option">Выберите длительность</option>
-				<option value="">3 часа</option>
-				<option value="">12 часов</option>
+				<option value="">Выберите длительность</option>
+				<option value="" class="form__option">Прохождение парка за 3 часа</option>
+				<option value="" class="form__option">Прохождение парка за 12 часов</option>
 			</select>
 		</form>
 		<div class="prices__counter  counter">
@@ -261,41 +270,41 @@
 		<h2 class="reviews__title  title">Отзывы</h2>
 		<div class="reviews__underline  underline"></div>
 		<div class="reviews__list">
-			<article class="reviews__item">
-				<div class="reviews__item-wrap">
-					<img src="img/reviews-photo1.jpg" alt="фото ученика" class="reviews__item-img">
+			<article class="reviews-item">
+				<div class="reviews-item__wrap-img">
+					<img src="img/reviews-photo1.jpg" alt="фото ученика" class="reviews-item__img">
 				</div>
-				<span class="reviews__item-name">Алексей</span>
-				<span class="reviews__item-skills">Скалолаз-любитель</span>
-				<div class="reviews__item-socials  reviews-socials">
+				<span class="reviews-item__name">Алексей</span>
+				<span class="reviews-item__skills">Скалолаз-любитель</span>
+				<div class="reviews-item__socials  reviews-socials">
 					<a href="#" class="reviews-socials__insta  reviews-socials__link"></a>
 					<a href="#" class="reviews-socials__vk  reviews-socials__link"></a>
 				</div>
-				<p class="reviews__item-text">Интересные трассы, вкусная еда и самые приветливые тренера!</p>
+				<p class="reviews-item__text">Интересные трассы, вкусная еда и самые приветливые тренера!</p>
 			</article>
-			<article class="reviews__item">
-				<div class="reviews__item-wrap">
-					<img src="img/reviews-photo2.jpg" alt="фото ученика" class="reviews__item-img">
+			<article class="reviews-item">
+				<div class="reviews-item__wrap-img">
+					<img src="img/reviews-photo2.jpg" alt="фото ученика" class="reviews-item__img">
 				</div>
-				<span class="reviews__item-name">Мария</span>
-				<span class="reviews__item-skills">Студентка</span>
-				<div class="reviews__item-socials  reviews-socials">
+				<span class="reviews-item__name">Мария</span>
+				<span class="reviews-item__skills">Студентка</span>
+				<div class="reviews-item__socials  reviews-socials">
 					<a href="#" class="reviews-socials__insta"></a>
 					<a href="#" class="reviews-socials__vk"></a>
 				</div>
-				<p class="reviews__item-text">Лучший скалодром в городе!</p>
+				<p class="reviews-item__text">Лучший скалодром в городе!</p>
 			</article>
-			<article class="reviews__item">
-				<div class="reviews__item-wrap">
-					<img src="img/reviews-photo3.jpg" alt="фото ученика" class="reviews__item-img">
+			<article class="reviews-item">
+				<div class="reviews-item__wrap-img">
+					<img src="img/reviews-photo3.jpg" alt="фото ученика" class="reviews-item__img">
 				</div>
-				<span class="reviews__item-name">Екатерина</span>
-				<span class="reviews__item-skills">Мама троих детей</span>
-				<div class="reviews__item-socials  reviews-socials">
+				<span class="reviews-item__name">Екатерина</span>
+				<span class="reviews-item__skills">Мама троих детей</span>
+				<div class="reviews-item__socials  reviews-socials">
 					<a href="#" class="reviews-socials__insta"></a>
 					<a href="#" class="reviews-socials__vk"></a>
 				</div>
-				<p class="reviews__item-text">Парк "BELKA" отличная альтернатива наскучившим походам в кино и кафе.</p>
+				<p class="reviews-item__text">Парк "BELKA" отличная альтернатива наскучившим походам в кино и кафе.</p>
 			</article>
 		</div>
 	</div>
@@ -336,5 +345,8 @@
 	</div>
 </footer>
 
+<!-- <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script> -->
 </body>
 </html>
