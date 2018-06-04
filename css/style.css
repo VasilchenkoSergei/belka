@@ -167,6 +167,7 @@ body {
   background-image: url(../img/routes-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 .routes__title {
@@ -319,6 +320,7 @@ body {
 .actions__list {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding-top: 50px;
 }
 
@@ -360,7 +362,7 @@ body {
 }
 
 .about {
-  min-height: 450px;
+  height: 450px;
   margin-top: 30px;
 }
 
@@ -385,11 +387,14 @@ body {
 
 .about__list {
   min-height: 280px;
+  min-width: 700px;
   margin-top: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 
 .about-item {
@@ -427,7 +432,7 @@ body {
 }
 
 .pictures {
-  height: 455px;
+  min-height: 455px;
   margin-top: 30px;
 }
 
@@ -650,7 +655,9 @@ body {
 
 .page-footer__contacts {
   position: relative;
-
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .contacts__address,
@@ -845,6 +852,7 @@ iframe {
 .page-header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__btn {
@@ -971,7 +979,6 @@ iframe {
   height: 60px;
 }
 
-
 .table__column--first {
   width: 50%;
   background-color: #5b6671;
@@ -1047,10 +1054,97 @@ iframe {
   width: 1190px;
 }
 
+.page-header__wrap {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.page-header__btn {
+  display: block;
+  width: 146px;
+  height: 32px;
+  background-color: #efeff4;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  border: 1px solid #000;
+  font-family: "Proxima Nova", sans-serif;
+  line-height: 32px;
+}
 
+.promo__btn {
+  display: none;
+}
 
+.routes {
+  height: 870px;
+}
 
+.actions__title {
+  position: static;
+  margin-top: 40px;
+
+}
+
+.actions__underline {
+  position: static;
+}
+
+.actions__list {
+  flex-direction: row;
+  padding-top: 80px;
+}
+
+.actions-item {
+  width: 360px;
+  height: 345px;
+}
+
+.about {
+  height: 380px;
+}
+
+.about__list {
+  width: 1040px;
+}
+
+.pictures__img-wrap {
+  width: 360px;
+  height: 490px;
+}
+
+.prices__title {
+  position: static;
+}
+
+.prices__underline {
+  position: static;
+}
+
+.table__column--first {
+  width: 33.333%;
+
+}
+
+.table__column--second {
+  width: 33.333%;
+}
+
+.table__column--third {
+  width: 33.333%;
+}
+
+.page-footer__contacts {
+  width: 400px;
+  flex-direction: row;
+}
+
+iframe {
+  width: 740px;
+  height: 420px;
+}
 
 
 }
