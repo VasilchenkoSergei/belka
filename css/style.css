@@ -460,7 +460,6 @@ body {
 .prices {
   position: relative;
   background-color: transparent;
-  z-index: -3;
 }
 
 .prices__container {
@@ -629,12 +628,14 @@ body {
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reviews-item__img {
-  width: 100%;
-  height: auto;
-  position: -100px;
+  width: auto;
+  height: 100%;
 }
 
 .reviews-item__name {
@@ -793,9 +794,13 @@ iframe {
   left: 0;
 }
 
+@media (min-width: 460px) {
 
+.promo {
+  background-position: center;
+}
 
-
+}
 
 
 
@@ -1065,6 +1070,8 @@ iframe {
 
 .table__column--second {
   width: 25%;
+  border-collapse: separate;
+  border-spacing: 10px;
 }
 
 .table__row--special {
@@ -1072,8 +1079,16 @@ iframe {
 }
 
 .table__column--second:hover {
-  background-color: red;
+  border: 2px solid #5e6a77;
 }
+
+.table__column--third:hover {
+  border: 2px solid #5e6a77;
+}
+
+/*.table__column--second:visited {
+  border: 2px solid #960000;
+}*/
 
 .prices__btn {
   margin-right: 80px;
