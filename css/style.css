@@ -204,7 +204,7 @@ body {
   height: 100%;
 }
 
-.routes-item--first {
+.routes-item {
   background-image: url(../img/route-photo1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -289,6 +289,10 @@ body {
   background-position: 0 -85px;
   left: 20px;
   top: -2px;
+}
+
+.routes-item__img-wrap {
+  display: none;
 }
 
 .routes-item__img {
