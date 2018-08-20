@@ -184,11 +184,10 @@ body {
 
 .routes__list {
   display: flex;
-  /*justify-content: space-around;*/
 }
 
 .routes-item {
-  width: 215px;
+  width: 230px;
   height: 320px;
   margin-top: 50px;
   margin: 0 auto;
@@ -204,7 +203,7 @@ body {
   height: 100%;
 }
 
-.routes-item {
+.routes-item--first {
   background-image: url(../img/route-photo1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
