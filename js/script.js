@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+  // $('.headline__burger').click(function() {
+  // $('.burger-menu').toggleClass('.burger-menu--active');
+  // $(".headline__burger").toggle();
+  //   });
+
+
+  $('.headline__burger').click(function() {
+  $(this)('.burger-menu').css('display','block');
+  $(".headline__burger").toggle();
+    });
 
   $('.routes__list').slick({
     arrows: false,
