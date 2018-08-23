@@ -1,14 +1,8 @@
 $(document).ready(function(){
 
-  // $('.headline__burger').click(function() {
-  // $('.burger-menu').toggleClass('.burger-menu--active');
-  // $(".headline__burger").toggle();
-  //   });
-
-
-  $('.headline__burger').click(function() {
-  $(this)('.burger-menu').css('display','block');
-  $(".headline__burger").toggle();
+  $('.headline__burger').on('click', function() {
+  $('.burger-menu').toggleClass('.active');
+  $('.burger-menu').toggle();
     });
 
   $('.routes__list').slick({
@@ -16,7 +10,6 @@ $(document).ready(function(){
     centerMode: true,
     slidesToShow: 5,
     slidesToScroll: 5,
-    variableWidth: true,
     responsive: [
       {
         breakpoint: 1200,
@@ -46,35 +39,6 @@ $(document).ready(function(){
       },
     ]
   });
-
-
-  // $('.reviews__list').slick({
-  //   arrows: false,
-  //   centerMode: true,
-  //   slidesToShow: 3,
-  //   responsive: [
-  //     // {
-  //     //   breakpoint: 1050,
-  //     //   settings: {
-  //     //     slidesToShow: ,
-  //     //   }
-  //     // },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         centerMode: true,
-  //         slidesToShow: 1,
-  //       }
-  //     },
-  //     // {
-  //     //   breakpoint: 480,
-  //     //   settings: {
-  //     //     centerMode: true,
-  //     //     slidesToShow: 1,
-  //     //   }
-  //     // }
-  //   ]
-  // });
 
 
 });
