@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Belka -Скалодром</title>
-		<link rel="stylesheet" href="css/owl.carousel.min.css">
-				<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -51,7 +51,7 @@
 			<div class="page-header__container  container">
 				<div class="page-header__wrap">
 					<img src="img/logo.png" alt="логотип" class="page-header__logo">
-					<a href="#" class="page-header__btn">Купить билет</a>
+					<a href="#" class="page-header__btn btn">Купить билет</a>
 				</div>
 				<nav class="page-header__main-nav  main-nav">
 					<ul class="main-nav__list">
@@ -79,7 +79,7 @@
 		<p class="promo__text--mobile"> Заберись на вершину, не уезжая в горы!</p>
 		<p class="promo__text">
 			Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а также для спортсменов разного уровня.<br>Включает в себя 2 детские трассы и 3 взрослые.<br>Скалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
-		<a href="#" class="promo__btn">Купить билет</a>
+		<a href="#" class="promo__btn btn">Купить билет</a>
 	</div>
 </div>
 
@@ -87,8 +87,8 @@
 	<div class="routes__container  container">
 		<h2 class="routes__title  title">Трассы</h2>
 		<div class="routes__underline  underline"></div>
-		<div class="routes__list  owl-carousel">
-			<article class="routes-item  routes-item--first">
+		<div class="routes__list owl-carousel owl-theme">
+			<article class="routes-item">
 				<h3 class="routes-item__title">Трасса #1</h3>
 				<span class="routes-item__height">Высота 15 м</span>
 				<span class="routes-item__age">Возраст 13+</span>
@@ -97,7 +97,7 @@
 				</div>
 				<p class="routes-item__text">Трасса для опытных скалолазов. Требуется наличие хорошей физподготовки.</p>
 			</article>
-			<article class="routes-item  routes-item--second">
+			<article class="routes-item">
 				<h3 class="routes-item__title">Трасса #2</h3>
 				<span class="routes-item__height">Высота 4 м</span>
 				<span class="routes-item__age">Возраст 4+</span>
@@ -106,7 +106,7 @@
 				</div>
 				<p class="routes-item__text">Для людей с разной физподготовкой. Различные зацепы и рельефы стены.</p>
 			</article>
-			<article class="routes-item  routes-item--third">
+			<article class="routes-item">
 				<h3 class="routes-item__title">Трасса #3</h3>
 				<span class="routes-item__height">Высота 10 м</span>
 				<span class="routes-item__age">Возраст 13+</span>
@@ -115,7 +115,7 @@
 				</div>
 				<p class="routes-item__text">Трасса подойдет как для профессионалов, так и для любителей. Необходима хорошая физподготовка.</p>
 			</article>
-			<article class="routes-item  routes-item--fourth">
+			<article class="routes-item">
 				<h3 class="routes-item__title">Трасса #4</h3>
 				<span class="routes-item__height">Высота 3 м</span>
 				<span class="routes-item__age">Возраст 4+</span>
@@ -161,15 +161,15 @@
 		<div class="about__underline  underline"></div>
 		<div class="about__list">
 			<article class="about-item">
-				<div class="about-item__icon  about-item__icon--first"></div>
+				<div class="about-item__icon"></div>
 				<p class="about-item__text">Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
 			</article>
 			<article class="about-item">
-				<div class="about-item__icon  about-item__icon--second"></div>
+				<div class="about-item__icon"></div>
 				<p class="about-item__text">Понятная маркировка трасс (ламинированные таблички и зацепки определенного цвета для каждой трассы)</p>
 			</article>
 			<article class="about-item">
-				<div class="about-item__icon  about-item__icon--third"></div>
+				<div class="about-item__icon"></div>
 				<p class="about-item__text">На территории скалодрома всегда находится инструктор, который готов ответить на любой ваш вопрос!</p>
 			</article>
 		</div>
@@ -177,7 +177,7 @@
 </section>
 
 <section class="pictures">
-	<div class="pictures__container  container  owl-carousel">
+	<div class="pictures__container  container  owl-carousel owl-theme">
 		<div class="pictures__img-wrap">
 			<img src="img/pictures-photo1.jpg" alt="фото скалодрома1" class="pictures__img">
 		</div>
@@ -196,20 +196,20 @@
 		<div class="prices__underline  underline"></div>
 		<form class="prices__form  form">
 			<select name="age" class="form__select">
-				<option value="">Выберите возраст</option>
-				<option value="" class="form__option">От 4 лет</option>
-				<option value="" class="form__option">От 7 лет</option>
+				<option>Выберите возраст</option>
+				<option class="form__option">От 4 лет</option>
+				<option class="form__option">От 7 лет</option>
 			</select>
 			<select name="route" class="form__select">
-				<option value="">Выберите место</option>
-				<option value="" class="form__option">Все трассы</option>
-				<option value="" class="form__option">Скалодром</option>
-				<option value="" class="form__option">Веревочный парк</option>
+				<option>Выберите место</option>
+				<option class="form__option">Все трассы</option>
+				<option class="form__option">Скалодром</option>
+				<option class="form__option">Веревочный парк</option>
 			</select>
 			<select name="time" class="form__select">
-				<option value="">Выберите длительность</option>
-				<option value="" class="form__option">Прохождение парка за 3 часа</option>
-				<option value="" class="form__option">Прохождение парка за 12 часов</option>
+				<option>Выберите длительность</option>
+				<option class="form__option">Прохождение парка за 3 часа</option>
+				<option class="form__option">Прохождение парка за 12 часов</option>
 			</select>
 		</form>
 		<div class="prices__counter  counter">
@@ -289,7 +289,7 @@
 	<div class="reviews__container  container">
 		<h2 class="reviews__title  title">Отзывы</h2>
 		<div class="reviews__underline  underline"></div>
-		<div class="reviews__list  owl-carousel">
+		<div class="reviews__list  owl-carousel owl-theme">
 			<article class="reviews-item  reviews-item--first">
 				<div class="reviews-item__wrap-img">
 					<img src="img/reviews-photo1.jpg" alt="фото ученика" class="reviews-item__img">
@@ -330,9 +330,9 @@
 	</div>
 </section>
 
-<footer class="page-footer" id="contacts">
+<footer class="page-footer">
 	<div class="page-footer__container  container">
-		<div class="page-footer__contacts  contacts">
+		<div class="page-footer__contacts  contacts" id="contacts">
 			<a href="#" class="contacts__address">Выборгское ш., 220</a>
 			<a href="tel:+7812999788" class="contacts__phone">8(812)999-77-88</a>
 		</div>

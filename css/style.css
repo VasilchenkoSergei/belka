@@ -40,6 +40,15 @@ body {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
+.btn {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .container {
   margin: 0 auto;
   width: 294px;
@@ -64,10 +73,8 @@ body {
 
 .headline-contacts__phone {
   font-family: "Proxima Nova", sans-serif;
-  font-size: 16px;
   padding-left: 26px;
   line-height: 30px;
-  text-decoration: none;
   color: #000;
   position: relative;
 }
@@ -127,7 +134,6 @@ body {
 }
 
 .burger-menu__link {
-  text-decoration: none;
   color: #000;
   font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
@@ -175,7 +181,6 @@ body {
 
 .promo__text {
   display: none;
-  
 }
 
 .promo__btn {
@@ -183,9 +188,7 @@ body {
   width: 146px;
   height: 32px;
   background-color: transparent;
-  text-decoration: none;
   color: #000;
-  text-align: center;
   border: 1px solid #000;
   font-family: "Proxima Nova", sans-serif;
   line-height: 32px;
@@ -209,16 +212,15 @@ body {
   margin-bottom: 48px;
 }
 
-.routes__list {
-  /*display: flex;*/
-}
-
 .routes-item {
   width: 230px;
   height: 320px;
   margin-top: 50px;
   margin: 0 auto;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .routes-item:before {
@@ -230,34 +232,28 @@ body {
   height: 100%;
 }
 
-.routes-item--first {
+.routes-item:hover:before {
+  opacity: 0;
+}
+
+.routes-item:nth-child(1) {
   background-image: url(../img/route-photo1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.routes-item--second {
+.routes-item:nth-child(2) {
   background-image: url(../img/route-photo2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.routes-item--third {
+.routes-item:nth-child(3) {
   background-image: url(../img/route-photo3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.routes-item--fourth {
+.routes-item:nth-child(4) {
   background-image: url(../img/route-photo4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.routes-item--fifth {
+.routes-item:nth-child(5) {
   background-image: url(../img/route-photo5.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .routes-item__title {
@@ -321,7 +317,6 @@ body {
   width: 215px;
   height: 320px;
 }
-
 
 .routes-item__text {
   width: 190px;
@@ -446,15 +441,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.about-item__icon--first {
+.about-item:first-child .about-item__icon {
   background-position: -255px 0;
 }
 
-.about-item__icon--second {
+.about-item:nth-child(2) .about-item__icon {
   background-position: -320px 0;
 }
 
-.about-item__icon--third {
+.about-item:nth-child(3) .about-item__icon {
   background-position: -390px 0;
 }
 
@@ -471,25 +466,24 @@ body {
 
 .pictures {
   min-height: 400px;
-  margin-bottom: 30px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .pictures__container {
-  /*display: flex;*/
+  width: 100%;
   margin: 0 auto;
 }
 
 .pictures__img-wrap {
-  min-width: 294px;
+  width: 295px;
   height: 400px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .pictures__img {
   width: 100%;
-  height: 100%;
-
+  height: auto;
 }
 
 .prices {
@@ -508,7 +502,6 @@ body {
 .prices__form {
   margin-top: 55px;
   text-align: center;
-  
 }
 
 .form__select {
@@ -535,12 +528,10 @@ body {
   justify-content: space-between;
   background-color: #f1f1f1;
   height: 53px;
+  margin: 0 -13px 10px -13px;
   line-height: 53px;
-  margin-left: -13px;
-  margin-right: -13px;
   padding-left: 13px;
   padding-right: 30px;
-  margin-bottom: 10px;
 }
 
 .prices__extra {
@@ -558,13 +549,10 @@ body {
   display: inline-block;
   width: 200px;
   height: 50px;
-  text-align: center;
   line-height: 50px;
   background-color: #932626;
   font-family: "Proxima Nova", sans-serif;
-  font-size: 16px;
   color: #fff;
-  text-transform: uppercase;
   border: none;
   margin: 0 auto;
 }
@@ -576,7 +564,6 @@ body {
   padding-top: 13px;
   font-size: 14px;
   color: #000;
-  text-decoration: none;
   border-bottom: 1px solid #000;
   text-align: center;
   margin-bottom: 30px;
@@ -658,15 +645,11 @@ body {
 }
 
 .reviews-item__img {
-  width: auto;
-  height: 100%;
+  transform: scale(1.4);
 }
 
 .reviews-item__name {
   font-weight: bold;
-}
-
-.reviews-item__skills {
 }
 
 .reviews-item__socials {
@@ -722,7 +705,6 @@ body {
   font-family: "Proxima Nova", sans-serif;
   font-size: 14px;
   color: #dadae7;
-  text-decoration: none;
   padding-left: 30px;
   position: relative;
 }
@@ -766,7 +748,6 @@ body {
 }
 
 .nav__link {
-  text-decoration: none;
   color: #dadae7;
   font-size: 14px;
 }
@@ -850,10 +831,8 @@ iframe {
 .headline-contacts__time {
   display: block;
   font-family: "Proxima Nova", sans-serif;
-  font-size: 16px;
   padding-left: 26px;
   line-height: 30px;
-  text-decoration: none;
   color: #000;
   position: relative;
 }
@@ -872,10 +851,8 @@ iframe {
 .headline-contacts__address {
   display: block;
   font-family: "Proxima Nova", sans-serif;
-  font-size: 16px;
   padding-left: 26px;
   line-height: 30px;
-  text-decoration: none;
   color: #000;
   position: relative;
 }
@@ -898,10 +875,6 @@ iframe {
 .promo {
   height: 820px;
   background-position: center;
-}
-
-.promo__text--mobile {
-  font-size: 16px;
 }
 
 .page-header {
@@ -929,7 +902,6 @@ iframe {
 .main-nav__link {
   font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
-  text-decoration: none;
   color: #000;
   position: relative;
 }
@@ -965,20 +937,13 @@ iframe {
 }
 
 .routes__list {
+  width: calc(100% - 80px);
   margin: 0 auto;
 }
 
 .routes-item {
   height: 620px;
-  background-image: none;
-}
-
-.routes-item--second {
-  display: block;
-}
-
-.routes-item--third {
-  display: block;
+  width: 215px;
 }
 
 .routes-item__img-wrap {
@@ -1005,7 +970,7 @@ iframe {
 
 .about {
   height: 380px;
-  margin-bottom: 55px;
+  margin-bottom: 80px;
 }
 
 .about__container {
@@ -1049,12 +1014,17 @@ iframe {
 }
 
 .pictures__container {
-/*  display: flex;
-  justify-content: space-between;*/
+    display: flex;
+  justify-content: space-between;
 }
 
 .pictures__img-wrap {
-  width: 244px;
+  width: 240px;
+  height: 400px;
+}
+
+.pictures__img {
+  height: 100%;
 }
 
 .prices {
@@ -1207,9 +1177,7 @@ iframe {
   width: 146px;
   height: 32px;
   background-color: #efeff4;
-  text-decoration: none;
   color: #000;
-  text-align: center;
   border: 1px solid #000;
   font-family: "Proxima Nova", sans-serif;
   line-height: 32px;
@@ -1221,6 +1189,10 @@ iframe {
 
 .routes {
   height: 870px;
+}
+
+.routes__list {
+  width: 100%;
 }
 
 .routes-item--fourth {
@@ -1272,10 +1244,6 @@ iframe {
 
 .about__list {
   width: 1040px;
-}
-
-.about-item__text {
-  font-size: 16px;
 }
 
 .pictures {
