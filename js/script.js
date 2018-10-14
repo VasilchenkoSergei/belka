@@ -68,13 +68,12 @@ $(window).width(function() {
 });
 
 
+// $('.footer-nav__link').on('click', function() {
+//   $(this).css({'color':'blue'});
+// });
 
-
-
-
-
-
-
-
+($('.main-nav__link') || $('.footer-nav__link')).on('click', function() {
+  $(this).css({'color':'blue'});
+});
 
 });

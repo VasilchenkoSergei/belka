@@ -187,7 +187,7 @@ a {
   display: block;
   width: 146px;
   height: 32px;
-  background-color: transparent;
+  background-color: #e9e9f1;
   color: #000;
   border: 1px solid #000;
   font-family: "Proxima Nova", sans-serif;
@@ -215,8 +215,7 @@ a {
 .routes-item {
   width: 230px;
   height: 320px;
-  margin-top: 50px;
-  margin: 0 auto;
+  margin: 50px auto 0;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -232,11 +231,27 @@ a {
   height: 100%;
 }
 
-.routes-item:hover:before {
-  opacity: 0;
+.routes-item--first {
+  background-image: url(../img/route-photo1.jpg);
 }
 
-.routes-item:nth-child(1) {
+.routes-item--second {
+  background-image: url(../img/route-photo2.jpg);
+}
+
+.routes-item--third {
+  background-image: url(../img/route-photo3.jpg);
+}
+
+.routes-item--fourth {
+  background-image: url(../img/route-photo4.jpg);
+}
+
+.routes-item--fifth {
+  background-image: url(../img/route-photo5.jpg);
+}
+
+/*.routes-item:nth-child(1) {
   background-image: url(../img/route-photo1.jpg);
 }
 
@@ -254,6 +269,11 @@ a {
 
 .routes-item:nth-child(5) {
   background-image: url(../img/route-photo5.jpg);
+}*/
+
+.routes-item:hover:before {
+  opacity: 1.0;
+  transition: all 0.7s;
 }
 
 .routes-item__title {
@@ -442,11 +462,11 @@ a {
 }
 
 .about-item:first-child .about-item__icon {
-  background-position: -255px 0;
+  background-position: -244px 0;
 }
 
 .about-item:nth-child(2) .about-item__icon {
-  background-position: -320px 0;
+  background-position: -312px 0;
 }
 
 .about-item:nth-child(3) .about-item__icon {
@@ -555,6 +575,11 @@ a {
   color: #fff;
   border: none;
   margin: 0 auto;
+}
+
+.prices__btn:hover {
+  background-color: #22313f;
+  transition: all 0.7s;
 }
 
 .prices__link {
@@ -737,46 +762,53 @@ a {
   left: 0;
 }
 
-.nav__list {
+.footer-nav__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.nav__item {
+.footer-nav__item {
   padding-bottom: 15px;
 }
 
-.nav__link {
+.footer-nav__link {
   color: #dadae7;
   font-size: 14px;
+}
+
+.footer-nav__link:hover {
+  border-bottom: 2px solid #dadae7;
+  transition: border-bottom 0.3s;
 }
 
 .page-footer__socials {
   display: flex;
   justify-content: space-between;
-  width: 100px;
+  width: 120px;
   height: 30px;
 }
 
-.socials__twit {
-  width: 30px;
+.socials__item {
+  width: 32px;
   height: 30px;
   background-image: url(../img/sprite.png);
+}
+
+.socials__item:hover {
+  transform: scale(1.2);
+  transition: all 0.7s;
+}
+
+.socials__twit {
   background-position: 0 -178px;
 }
 
 .socials__vk {
-  width: 33px;
-  height: 30px;
-  background-image: url(../img/sprite.png);
   background-position: -85px -177px;
 }
 
 .socials__insta {
-  width: 30px;
-  height: 30px;
-  background-image: url(../img/sprite.png);
   background-position: -168px -180px;
 }
 
@@ -906,7 +938,7 @@ iframe {
   position: relative;
 }
 
-.main-nav__link:hover:before {
+.main-nav__link:before {
   content: '';
   position: absolute;
   width: 40px;
@@ -916,6 +948,12 @@ iframe {
   left: 0;
   right: 0;
   margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+.main-nav__link:hover:before {
+  opacity: 1;
 }
 
 .promo__text--mobile {
@@ -1086,14 +1124,17 @@ iframe {
 
 .table__column--second:hover {
   border: 2px solid #5e6a77;
+  cursor: pointer;
 }
 
 .table__column--third:hover {
   border: 2px solid #5e6a77;
+  cursor: pointer;
 }
 
 .prices__btn {
   margin-right: 80px;
+  cursor: pointer;
 }
 
 .prices__link {
@@ -1123,7 +1164,7 @@ iframe {
   font-size: 18px;
 }
 
-.nav__link {
+.footer-nav__link {
   font-size: 18px;
 }
 
@@ -1144,14 +1185,7 @@ iframe {
 .page-footer__socials {
   padding-top: 20px;
 }
-
 }
-
-
-
-
-
-
 
 
 
@@ -1181,6 +1215,13 @@ iframe {
   border: 1px solid #000;
   font-family: "Proxima Nova", sans-serif;
   line-height: 32px;
+}
+
+.page-header__btn:hover {
+  color: #fff;
+  background-color: #22313f;
+  opacity: 0.5;
+  transition: all 0.5s;
 }
 
 .promo__btn {
@@ -1259,7 +1300,7 @@ iframe {
   margin-bottom: 110px;
 }
 
-.prices__title {e
+.prices__title {
   position: static;
 }
 
@@ -1293,5 +1334,4 @@ iframe {
   width: 740px;
   height: 420px;
 }
-
 }
